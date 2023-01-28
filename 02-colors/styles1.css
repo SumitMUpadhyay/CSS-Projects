@@ -1,0 +1,131 @@
+/* PIXELS- absolute values, one dot on the screen
+FONT-SIZE - size of the font
+WIDTH - width of an element
+HEIGHT- height of an element */
+
+/* h1 {
+ font-size: 60px;
+ background: blue;
+ color: white;
+ width: 1000px;
+ height:800px;
+} */
+
+/* % - percent. RELATIVE UNIT/VALUE Depends on the parent */
+
+/* .outer {
+ width:200px;
+ height:200px;
+ background: blue;
+}
+
+.inner {
+ width:100%;
+ height:67%;
+ background: red;
+} */
+
+/* 
+em- RELATIVE, depends on parents
+1em- 16px default browser style
+1em - base value (16px) * number (1)= 16px
+2em = base value (16px) * number (2) = 32px
+2em = base value (10px) * number (2) = 20px
+
+ */
+ /* div {
+  font-size: 10px;
+ }
+
+ .absolute {
+font-size: 32px;
+ }
+
+ .relative {
+  font-size: 2em;
+ } */
+
+ /* 
+ rem- RELATIVE, depends on the root
+ 1rem = base value (16px) * number (1)
+ */
+ /* html {
+  font-size: 10px;
+ }
+  div {
+   font-size: 5px;
+  }
+ 
+  .absolute {
+   font-size: 32px;
+  }
+ 
+  .relative {
+   font-size: 2rem;
+  } */
+
+  /* 
+  VIEWPORT UNITS
+  vh - height - percent of the screen,
+  vw- width - percent of the screen
+   */
+   /* * {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+   }
+
+   .hero {
+    background: green;
+    height:100vh;
+    width:100vw;
+   }
+
+   .about {
+    background: blue;
+    height:43vh;
+    width:54vw;
+   } */
+
+   /* 
+   Default Browser Styles and Google Chrome DevTools
+    */
+/* 
+    h2 {
+     color:red;
+     font-size: 30px;
+    } */
+
+    /*  
+    CALC ()
+    PERFORM MATH OPERATIONS + - * /
+    MIX AND MATCH VALUES
+     */
+
+     /* height:auto;min-height;max-height;overflow */
+     * {
+      margin:0;
+     }
+
+     .navbar {
+      background: blue;
+      height: 6rem;
+      color: white;
+      font-size: 3rem;
+     }
+
+     .banner {
+      background: red;
+      height:calc(100vh - 6rem);
+      min-height: calc(100vh - 6rem);
+      max-height: 90vh;
+      overflow: hidden;
+     }
+
+     .example {
+      background:green;
+      width:20rem;
+      height:25rem;
+      overflow: hidden;
+      overflow: scroll;
+     }
